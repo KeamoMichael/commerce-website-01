@@ -1303,6 +1303,24 @@ body {
     .newsletter-heading {
         font-size: 36px;
     }
+    
+    .newsletter-form {
+        flex-direction: column;
+        max-width: 100%;
+        width: 100%;
+        gap: 15px;
+    }
+    
+    .newsletter-input {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+    
+    .newsletter-btn {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
 
 /* Product Detail Page */
