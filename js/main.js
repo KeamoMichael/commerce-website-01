@@ -101,33 +101,68 @@ let currentCategory = 'all';
 function initMobileMenu() {
     const menuToggle = document.getElementById('nav-menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
+    const closeBtn = document.getElementById('mobile-menu-close');
     const body = document.body;
 
+    function openMenu() {
+        if (menuToggle && mobileMenu) {
+            menuToggle.classList.add('active');
+            mobileMenu.classList.add('active');
+            body.style.overflow = 'hidden';
+        }
+    }
+
+    function closeMenu() {
+        if (menuToggle && mobileMenu) {
+            menuToggle.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            body.style.overflow = '';
+        }
+    }
+
     if (menuToggle && mobileMenu) {
-        menuToggle.addEventListener('click', () => {
-            menuToggle.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-            body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-        });
+        menuToggle.addEventListener('click', openMenu);
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeMenu);
+        }
 
         // Close menu when clicking on a link
         const menuLinks = mobileMenu.querySelectorAll('.mobile-menu-link');
         menuLinks.forEach(link => {
             link.addEventListener('click', () => {
-                menuToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                body.style.overflow = '';
+                closeMenu();
             });
         });
 
-        // Close menu when clicking outside
-        mobileMenu.addEventListener('click', (e) => {
-            if (e.target === mobileMenu) {
-                menuToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                body.style.overflow = '';
-            }
-        });
+        // Sync currency display between navbar and mobile menu
+        const currencyBtn = document.getElementById('currency-btn');
+        const mobileCurrencyBtn = document.getElementById('mobile-currency-btn');
+        const currencyFlag = document.getElementById('currency-flag');
+        const mobileCurrencyFlag = document.getElementById('mobile-currency-flag');
+        const currencyCode = document.getElementById('currency-code');
+        const mobileCurrencyCode = document.getElementById('mobile-currency-code');
+
+        if (currencyBtn && mobileCurrencyBtn) {
+            // Update mobile currency when main currency changes
+            const updateMobileCurrency = () => {
+                if (currencyFlag && mobileCurrencyFlag) {
+                    mobileCurrencyFlag.textContent = currencyFlag.textContent;
+                }
+                if (currencyCode && mobileCurrencyCode) {
+                    mobileCurrencyCode.textContent = currencyCode.textContent;
+                }
+            };
+
+            // Listen for currency changes
+            const currencyOptions = document.querySelectorAll('.currency-option');
+            currencyOptions.forEach(option => {
+                option.addEventListener('click', updateMobileCurrency);
+            });
+
+            // Sync on menu open
+            menuToggle.addEventListener('click', updateMobileCurrency);
+        }
     }
 }
 

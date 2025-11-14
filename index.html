@@ -77,12 +77,34 @@
         </nav>
         <!-- Mobile Menu -->
         <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="mobile-menu-logo">Chosen</a>
+                <div class="mobile-menu-top-right">
+                    <div class="currency-selector mobile-currency" id="mobile-currency-selector">
+                        <button class="currency-btn" id="mobile-currency-btn">
+                            <span class="currency-flag" id="mobile-currency-flag">🇺🇸</span>
+                            <span class="currency-code" id="mobile-currency-code">USD</span>
+                        </button>
+                    </div>
+                    <a href="#" class="mobile-menu-account">Account</a>
+                    <a href="#" class="mobile-menu-cart cart-link">
+                        Cart
+                        <span class="cart-count">(0)</span>
+                    </a>
+                    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">×</button>
+                </div>
+            </div>
             <div class="mobile-menu-content">
-                <a href="index.html" class="mobile-menu-link">Shop</a>
+                <a href="index.html" class="mobile-menu-link">Home</a>
+                <div class="mobile-menu-link-wrapper">
+                    <a href="index.html" class="mobile-menu-link">
+                        Shop
+                        <span class="mobile-menu-chevron">▼</span>
+                    </a>
+                </div>
                 <a href="#" class="mobile-menu-link">Brand</a>
                 <a href="#" class="mobile-menu-link">Journal</a>
                 <a href="#" class="mobile-menu-link">Contact</a>
-                <a href="#" class="mobile-menu-link">Account</a>
             </div>
         </div>
     </header>
