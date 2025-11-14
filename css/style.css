@@ -815,7 +815,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    row-gap: 60px;
+    row-gap: 80px;
 }
 
 .product-card {
@@ -885,7 +885,7 @@ body {
 }
 
 .product-info {
-    padding: 20px 0 0;
+    padding: 10px 0 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
