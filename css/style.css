@@ -388,14 +388,18 @@ body {
 .mobile-menu-shop-dropdown {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
     width: 100%;
     padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .mobile-menu-link-wrapper.active .mobile-menu-shop-dropdown {
-    max-height: 300px;
+    max-height: 400px;
     padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .mobile-menu-dropdown-link {
