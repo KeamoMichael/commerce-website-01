@@ -198,23 +198,115 @@
     <header class="header">
         <nav class="nav">
             <div class="nav-left">
-                <a href="index.html" class="nav-link">Shop</a>
-                <a href="#" class="nav-link">Brand</a>
-                <a href="#" class="nav-link">Journal</a>
-                <a href="#" class="nav-link">Contact</a>
-            </div>
-            <div class="nav-center">
                 <a href="index.html" class="nav-logo">Chosen</a>
             </div>
             <div class="nav-right">
-                <a href="index.html" class="nav-link">Account</a>
-                <a href="index.html" class="nav-link cart-link">
+                <div class="currency-selector" id="currency-selector">
+                    <button class="currency-btn" id="currency-btn">
+                        <span class="currency-flag" id="currency-flag">🇺🇸</span>
+                        <span class="currency-code" id="currency-code">USD</span>
+                    </button>
+                    <div class="currency-dropdown" id="currency-dropdown">
+                        <button class="currency-option" data-currency="USD" data-flag="🇺🇸">🇺🇸 USD</button>
+                        <button class="currency-option" data-currency="EUR" data-flag="🇪🇺">🇪🇺 EUR</button>
+                        <button class="currency-option" data-currency="GBP" data-flag="🇬🇧">🇬🇧 GBP</button>
+                        <button class="currency-option" data-currency="JPY" data-flag="🇯🇵">🇯🇵 JPY</button>
+                        <button class="currency-option" data-currency="CAD" data-flag="🇨🇦">🇨🇦 CAD</button>
+                        <button class="currency-option" data-currency="AUD" data-flag="🇦🇺">🇦🇺 AUD</button>
+                        <button class="currency-option" data-currency="CHF" data-flag="🇨🇭">🇨🇭 CHF</button>
+                        <button class="currency-option" data-currency="CNY" data-flag="🇨🇳">🇨🇳 CNY</button>
+                        <button class="currency-option" data-currency="INR" data-flag="🇮🇳">🇮🇳 INR</button>
+                        <button class="currency-option" data-currency="BRL" data-flag="🇧🇷">🇧🇷 BRL</button>
+                        <button class="currency-option" data-currency="MXN" data-flag="🇲🇽">🇲🇽 MXN</button>
+                        <button class="currency-option" data-currency="KRW" data-flag="🇰🇷">🇰🇷 KRW</button>
+                        <button class="currency-option" data-currency="SGD" data-flag="🇸🇬">🇸🇬 SGD</button>
+                        <button class="currency-option" data-currency="HKD" data-flag="🇭🇰">🇭🇰 HKD</button>
+                        <button class="currency-option" data-currency="NZD" data-flag="🇳🇿">🇳🇿 NZD</button>
+                        <button class="currency-option" data-currency="SEK" data-flag="🇸🇪">🇸🇪 SEK</button>
+                        <button class="currency-option" data-currency="NOK" data-flag="🇳🇴">🇳🇴 NOK</button>
+                        <button class="currency-option" data-currency="DKK" data-flag="🇩🇰">🇩🇰 DKK</button>
+                        <button class="currency-option" data-currency="PLN" data-flag="🇵🇱">🇵🇱 PLN</button>
+                        <button class="currency-option" data-currency="ZAR" data-flag="🇿🇦">🇿🇦 ZAR</button>
+                    </div>
+                </div>
+                <a href="#" class="nav-link">Account</a>
+                <a href="#" class="nav-link cart-link">
                     Cart
                     <span class="cart-count">(0)</span>
                 </a>
+                <!-- Hamburger Menu Button -->
+                <button class="nav-menu-toggle" id="nav-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
             </div>
         </nav>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-header">
+                <a href="index.html" class="mobile-menu-logo">Chosen</a>
+                <div class="mobile-menu-top-right">
+                    <div class="currency-selector mobile-currency" id="mobile-currency-selector">
+                        <button class="currency-btn" id="mobile-currency-btn">
+                            <span class="currency-flag" id="mobile-currency-flag">🇺🇸</span>
+                            <span class="currency-code" id="mobile-currency-code">USD</span>
+                        </button>
+                    </div>
+                    <a href="#" class="mobile-menu-account">Account</a>
+                    <a href="#" class="mobile-menu-cart cart-link">
+                        Cart
+                        <span class="cart-count">(0)</span>
+                    </a>
+                    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">×</button>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-menu-link">Home</a>
+                <div class="mobile-menu-link-wrapper">
+                    <a href="index.html" class="mobile-menu-link mobile-menu-shop-link" id="mobile-shop-link">
+                        Shop
+                        <span class="mobile-menu-chevron" id="mobile-shop-chevron">
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <div class="mobile-menu-shop-dropdown" id="mobile-shop-dropdown">
+                        <a href="index.html?category=all" class="mobile-menu-dropdown-link">All</a>
+                        <a href="index.html?category=tops" class="mobile-menu-dropdown-link">Tops</a>
+                        <a href="index.html?category=bottoms" class="mobile-menu-dropdown-link">Bottoms</a>
+                        <a href="index.html?category=new" class="mobile-menu-dropdown-link">New</a>
+                        <a href="index.html?category=summer2025" class="mobile-menu-dropdown-link">Summer 2025</a>
+                    </div>
+                </div>
+                <a href="#" class="mobile-menu-link">Brand</a>
+                <a href="#" class="mobile-menu-link">Journal</a>
+                <a href="#" class="mobile-menu-link">Contact</a>
+            </div>
+        </div>
     </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-sidebar-overlay" id="cart-sidebar-overlay"></div>
+        <div class="cart-sidebar-content">
+            <div class="cart-sidebar-header">
+                <h2 class="cart-sidebar-title" id="cart-sidebar-title">0 ITEMS IN CART</h2>
+                <button class="cart-sidebar-close" id="cart-sidebar-close">×</button>
+            </div>
+            <div class="cart-sidebar-items" id="cart-sidebar-items">
+                <!-- Cart items will be rendered here -->
+            </div>
+            <div class="cart-sidebar-footer">
+                <div class="cart-sidebar-subtotal">
+                    <span>Subtotal</span>
+                    <span class="cart-sidebar-total" id="cart-sidebar-total">$0.00</span>
+                </div>
+                <button class="cart-checkout-btn" id="cart-checkout-btn">CHECK OUT</button>
+                <button class="cart-clear-btn" id="cart-clear-btn">CLEAR CART</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Checkout Page -->
     <main class="checkout-page">
@@ -294,6 +386,50 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <h2 class="newsletter-heading">Get in on the News</h2>
+                <div class="newsletter-form-wrapper">
+                    <p class="newsletter-label">Subscribe to our newsletter</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links-section">
+                <div class="footer-logo">Chosen</div>
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">(Customer Care)</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Our Store</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">(Navigate)</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">Journal</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-column-title">(Other)</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">404</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
             <div class="footer-bottom">
                 <p>By Flowit Supply</p>
                 <p>©2025</p>
