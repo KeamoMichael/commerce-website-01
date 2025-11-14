@@ -379,6 +379,9 @@ body {
 
 .mobile-menu-link-wrapper.active .mobile-menu-chevron {
     color: #000;
+}
+
+.mobile-menu-link-wrapper.active .mobile-menu-chevron svg {
     transform: rotate(90deg);
 }
 
