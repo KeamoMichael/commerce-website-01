@@ -144,6 +144,13 @@ function initMobileMenu() {
             const dropdownLink = e.target.closest('.mobile-menu-dropdown-link');
             if (dropdownLink) {
                 closeMenu();
+                return;
+            }
+            
+            // Close menu when clicking on other menu links (not Shop)
+            const menuLink = e.target.closest('.mobile-menu-link:not(.mobile-menu-shop-link)');
+            if (menuLink) {
+                closeMenu();
             }
         });
 
