@@ -893,18 +893,19 @@ body {
 
 .product-name {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 1px;
-    text-transform: uppercase;
     color: #000;
     text-align: left;
+    font-family: 'ClashGrotesk', sans-serif;
 }
 
 .product-price {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     color: #000;
     text-align: right;
+    font-family: 'ClashGrotesk', sans-serif;
 }
 
 /* Newsletter Pop-up Modal */
