@@ -10,6 +10,10 @@
             min-height: 100vh;
             padding: 100px 40px 80px;
             background: #fff;
+            width: 100%;
+            max-width: 100%;
+            overflow-x: hidden;
+            box-sizing: border-box;
         }
         
         .checkout-container {
@@ -18,10 +22,15 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
+            width: 100%;
+            box-sizing: border-box;
         }
         
         .checkout-section {
             background: #fff;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
         }
         
         .checkout-title {
@@ -58,6 +67,9 @@
             font-size: 14px;
             font-family: 'ClashGrotesk', sans-serif;
             transition: border-color 0.3s ease;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100%;
         }
         
         .form-input:focus {
@@ -183,12 +195,66 @@
         }
         
         @media (max-width: 768px) {
+            .checkout-page {
+                padding: 80px 20px 40px;
+            }
+            
             .checkout-container {
                 grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .checkout-title {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            
+            .checkout-form {
+                gap: 15px;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .form-input {
+                width: 100%;
+                box-sizing: border-box;
             }
             
             .order-summary {
                 position: static;
+                padding: 20px;
+            }
+            
+            .order-summary-title {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+            
+            .checkout-btn {
+                padding: 14px 20px;
+                font-size: 11px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .checkout-page {
+                padding: 70px 15px 30px;
+            }
+            
+            .checkout-container {
+                gap: 20px;
+            }
+            
+            .checkout-title {
+                font-size: 20px;
+                margin-bottom: 25px;
+            }
+            
+            .order-summary {
+                padding: 15px;
             }
         }
     </style>
