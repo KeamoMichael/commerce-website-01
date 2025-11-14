@@ -100,7 +100,13 @@ body {
 }
 
 .nav-center {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
 }
 
 .nav-logo {
@@ -430,6 +436,17 @@ body {
 
     .nav {
         padding: 15px 20px;
+    }
+
+    .nav-left {
+        display: none;
+    }
+
+    .nav-center {
+        display: flex;
+        position: static;
+        transform: none;
+        left: auto;
     }
 
     .nav-right {
