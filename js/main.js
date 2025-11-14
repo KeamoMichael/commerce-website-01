@@ -47,7 +47,7 @@ const products = [
         id: 5,
         name: 'Black Hoodie', // Row 2, 2nd image - renamed only
         price: '$89.00',
-        image: 'reference/Images/Set 05/Set 05_02.jpg', // Model wearing it
+        image: 'reference/black hoodie.jpg', // Main image
         imageHover: 'reference/Images/Set 05/Set 05_01.jpg', // Clothing item
         category: 'tops',
         itemType: 'hoodie',
