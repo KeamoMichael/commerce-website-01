@@ -3,31 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Chosen.</title>
+    <title>Brand - Chosen</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Newsletter Pop-up Modal -->
-    <div class="newsletter-modal" id="newsletter-modal">
-        <div class="newsletter-modal-overlay"></div>
-        <div class="newsletter-modal-content">
-            <button class="newsletter-modal-close" id="newsletter-modal-close">×</button>
-            <div class="newsletter-modal-container">
-                <div class="newsletter-modal-image">
-                    <img src="IMAGES02/Pop-Up IMAGE.jpg" alt="Newsletter">
-                </div>
-                <div class="newsletter-modal-form-section">
-                    <h2 class="newsletter-modal-logo">Chosen</h2>
-                    <p class="newsletter-modal-text">Join the club and get 10% off your first purchase</p>
-                    <form class="newsletter-modal-form" id="newsletter-modal-form">
-                        <input type="email" placeholder="Your email" class="newsletter-modal-input" required>
-                        <button type="submit" class="newsletter-modal-btn">JOIN</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="header">
         <nav class="nav">
@@ -130,9 +109,9 @@
                         <a href="index.html?category=summer2025" class="mobile-menu-dropdown-link">Summer 2025</a>
                     </div>
                 </div>
-                <a href="#" class="mobile-menu-link">Brand</a>
-                <a href="#" class="mobile-menu-link">Journal</a>
-                <a href="#" class="mobile-menu-link">Contact</a>
+                <a href="brand.html" class="mobile-menu-link">Brand</a>
+                <a href="journal.html" class="mobile-menu-link">Journal</a>
+                <a href="contact.html" class="mobile-menu-link">Contact</a>
             </div>
         </div>
     </header>
@@ -159,55 +138,41 @@
         </div>
     </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Brand Page Content -->
+    <main class="brand-page">
         <div class="container">
-            <!-- Shop Header -->
-            <div class="shop-header">
-                <h1 class="shop-title">Shop</h1>
-                <p class="shop-description">
-                    Explore Chosen's premium lifestyle clothing catalog, featuring high-end casual wear for the modern individual.
+            <h1 class="brand-page-title">Our Brand</h1>
+            
+            <section class="brand-section">
+                <h3 class="brand-section-label">(Meet The Founder)</h3>
+                <p class="brand-section-text">
+                    From the streets of New York City to the world stage, a passion for fashion sparked a movement. What began as a hobby - crafting unique garments for fun - evolved into a global brand, iconic for its retro flair and timeless style. Today, our clothing and accessories are worn by style enthusiasts everywhere.
                 </p>
-            </div>
+            </section>
 
-            <!-- Category Filters -->
-            <div class="category-filters">
-                <button class="filter-btn active" data-category="all">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">All</span>
-                        <span class="filter-text-inner">All</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="tops">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">Tops</span>
-                        <span class="filter-text-inner">Tops</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="bottoms">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">Bottoms</span>
-                        <span class="filter-text-inner">Bottoms</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="new">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">New</span>
-                        <span class="filter-text-inner">New</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="summer-2025">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">Summer 2025</span>
-                        <span class="filter-text-inner">Summer 2025</span>
-                    </span>
-                </button>
-            </div>
+            <section class="brand-section">
+                <h3 class="brand-section-label">(Based)</h3>
+                <h2 class="brand-section-heading">New York</h2>
+            </section>
 
-            <!-- Products Grid -->
-            <div class="products-grid" id="products-grid">
-                <!-- Products will be loaded here -->
-            </div>
+            <section class="brand-section">
+                <h3 class="brand-section-subtitle">Sustainable Style: We Source Only the Finest Organic Cotton and Wool.</h3>
+                <p class="brand-section-text">
+                    At Chosen, we believe fashion and nature go hand-in-hand. That's why we source only organic cotton and materials, reducing our environmental footprint.
+                </p>
+                <p class="brand-section-text">
+                    Chosen is committed to sustainable practices. From seed to stitch, we're minimizing our ecological footprint with 100% organic materials.
+                </p>
+                
+                <div class="brand-features">
+                    <div class="brand-feature">
+                        <h4 class="brand-feature-label">(Sourced from Ireland)</h4>
+                    </div>
+                    <div class="brand-feature">
+                        <h4 class="brand-feature-label">(Pima Cotton)</h4>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -241,10 +206,10 @@
                     <div class="footer-column">
                         <h4 class="footer-column-title">(Navigate)</h4>
                         <ul class="footer-links">
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Brand</a></li>
-                            <li><a href="#">Journal</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html">Shop</a></li>
+                            <li><a href="brand.html">Brand</a></li>
+                            <li><a href="journal.html">Journal</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">

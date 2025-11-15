@@ -3,31 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Chosen.</title>
+    <title>Journal - Chosen</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Newsletter Pop-up Modal -->
-    <div class="newsletter-modal" id="newsletter-modal">
-        <div class="newsletter-modal-overlay"></div>
-        <div class="newsletter-modal-content">
-            <button class="newsletter-modal-close" id="newsletter-modal-close">×</button>
-            <div class="newsletter-modal-container">
-                <div class="newsletter-modal-image">
-                    <img src="IMAGES02/Pop-Up IMAGE.jpg" alt="Newsletter">
-                </div>
-                <div class="newsletter-modal-form-section">
-                    <h2 class="newsletter-modal-logo">Chosen</h2>
-                    <p class="newsletter-modal-text">Join the club and get 10% off your first purchase</p>
-                    <form class="newsletter-modal-form" id="newsletter-modal-form">
-                        <input type="email" placeholder="Your email" class="newsletter-modal-input" required>
-                        <button type="submit" class="newsletter-modal-btn">JOIN</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Header -->
     <header class="header">
         <nav class="nav">
@@ -130,9 +109,9 @@
                         <a href="index.html?category=summer2025" class="mobile-menu-dropdown-link">Summer 2025</a>
                     </div>
                 </div>
-                <a href="#" class="mobile-menu-link">Brand</a>
-                <a href="#" class="mobile-menu-link">Journal</a>
-                <a href="#" class="mobile-menu-link">Contact</a>
+                <a href="brand.html" class="mobile-menu-link">Brand</a>
+                <a href="journal.html" class="mobile-menu-link">Journal</a>
+                <a href="contact.html" class="mobile-menu-link">Contact</a>
             </div>
         </div>
     </header>
@@ -159,54 +138,38 @@
         </div>
     </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
+    <!-- Journal Page Content -->
+    <main class="journal-page">
         <div class="container">
-            <!-- Shop Header -->
-            <div class="shop-header">
-                <h1 class="shop-title">Shop</h1>
-                <p class="shop-description">
-                    Explore Chosen's premium lifestyle clothing catalog, featuring high-end casual wear for the modern individual.
-                </p>
-            </div>
+            <h1 class="journal-page-title">Journal</h1>
+            
+            <div class="journal-articles">
+                <article class="journal-article">
+                    <h2 class="journal-article-title">The Art of Sustainable Fashion</h2>
+                    <p class="journal-article-date">November 15, 2025</p>
+                    <p class="journal-article-excerpt">
+                        Discover how we're revolutionizing the fashion industry with sustainable practices and organic materials. Learn about our commitment to the environment and the future of fashion.
+                    </p>
+                    <a href="#" class="journal-article-link">Read More</a>
+                </article>
 
-            <!-- Category Filters -->
-            <div class="category-filters">
-                <button class="filter-btn active" data-category="all">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">All</span>
-                        <span class="filter-text-inner">All</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="tops">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">Tops</span>
-                        <span class="filter-text-inner">Tops</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="bottoms">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">Bottoms</span>
-                        <span class="filter-text-inner">Bottoms</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="new">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">New</span>
-                        <span class="filter-text-inner">New</span>
-                    </span>
-                </button>
-                <button class="filter-btn" data-category="summer-2025">
-                    <span class="filter-text-wrapper">
-                        <span class="filter-text-inner">Summer 2025</span>
-                        <span class="filter-text-inner">Summer 2025</span>
-                    </span>
-                </button>
-            </div>
+                <article class="journal-article">
+                    <h2 class="journal-article-title">Behind the Design: Our Latest Collection</h2>
+                    <p class="journal-article-date">November 10, 2025</p>
+                    <p class="journal-article-excerpt">
+                        Take a look behind the scenes as we design and create our latest collection. From initial sketches to final production, see how our pieces come to life.
+                    </p>
+                    <a href="#" class="journal-article-link">Read More</a>
+                </article>
 
-            <!-- Products Grid -->
-            <div class="products-grid" id="products-grid">
-                <!-- Products will be loaded here -->
+                <article class="journal-article">
+                    <h2 class="journal-article-title">Style Guide: How to Wear Our Essentials</h2>
+                    <p class="journal-article-date">November 5, 2025</p>
+                    <p class="journal-article-excerpt">
+                        Get inspired with our styling tips and tricks. Learn how to create versatile looks with our essential pieces that work for any occasion.
+                    </p>
+                    <a href="#" class="journal-article-link">Read More</a>
+                </article>
             </div>
         </div>
     </main>
@@ -241,10 +204,10 @@
                     <div class="footer-column">
                         <h4 class="footer-column-title">(Navigate)</h4>
                         <ul class="footer-links">
-                            <li><a href="#">Shop</a></li>
-                            <li><a href="#">Brand</a></li>
-                            <li><a href="#">Journal</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html">Shop</a></li>
+                            <li><a href="brand.html">Brand</a></li>
+                            <li><a href="journal.html">Journal</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
